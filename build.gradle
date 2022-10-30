@@ -28,11 +28,15 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
-
-bootJar {
-    archiveClassifier.set('boot')
-}
+//
+//bootJar {
+//    archiveClassifier.set('boot')
+//}
+//
+//jar {
+//    archiveClassifier.set('')
+//}
 
 jar {
-    archiveClassifier.set('')
+    enabled = false
 }
